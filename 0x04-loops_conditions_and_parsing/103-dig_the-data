@@ -2,5 +2,4 @@
 # parses apache Log files in list format and displays the IP and HTTP status code.
 
 myfile="apache-access.log"
-
 awk -F' ' '{ print $1, $9}' $myfile
